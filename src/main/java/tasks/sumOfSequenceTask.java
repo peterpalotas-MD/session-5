@@ -23,7 +23,7 @@ public class sumOfSequenceTask{
 
     //This function is my implementation of the gaussian sum with steps (Essentially arithmetic series)
     //computes sum with steps in O(1) time instead of the O(n) solution that for(int i = begin; i<=end; i+=step)
-    public int sumOfSequence(int begin, int end,int step){
+    public static int sumOfSequence(int begin, int end,int step){
 
         int numberOfTerms = ((end-begin)/step)+1;//3
 

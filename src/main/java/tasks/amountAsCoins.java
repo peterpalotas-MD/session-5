@@ -18,7 +18,6 @@ public class amountAsCoins {
         //min number of coins needed to make amount
         int[] dp = new int[amount + 1];
 
-        //coin value used last when optimally making x
         int[] lastCoin = new int[amount + 1];
 
         Arrays.fill(dp, Integer.MAX_VALUE);
@@ -53,13 +52,13 @@ public class amountAsCoins {
 
         return result;
     }
-
-    public static void main(String[] args) {
-        int[] coins = {25, 10, 5, 2, 1};
-        int amount = 10000;
-
-        List<Integer> solution = makeChange(amount, coins);
-        System.out.println(solution);
-    }
+//
+//    public static void main(String[] args) {
+//        int[] coins = {25, 10, 5, 2, 1};
+//        int amount = 16;
+//
+//        List<Integer> solution = makeChange(amount, coins);
+//        System.out.println(solution);
+//    }
 
 }
